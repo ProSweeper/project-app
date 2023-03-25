@@ -8,7 +8,7 @@ import Greeting from "@/components/Greeting"
 import GreetingsSkeleton from "@/components/GreetingsSkeleton";
 import ProjectCard from "@/components/ProjectCard";
 import { delay } from "@/lib/async";
-import TaskCard from "@/components/TaskCars";
+import TaskCard from "@/components/TaskCard";
 
 const getData = async () => {
   await delay(2000)
