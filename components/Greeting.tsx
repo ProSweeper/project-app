@@ -6,15 +6,15 @@ import { delay } from "@/lib/async";
 
 const getData = async () => {
   await delay(4000)
-  const user = await getUserFromCookie(cookies());
-  return user;
+  const user = await getUserFromCookie(cookies())
+  return user
 }
 
 const Greeting = async () => {
-  const user = await getData();
+  const user = await getData()
 
   return (
-    <Card className="w-full py-4 relative">
+  <Card className="w-full py-4 relative">
     <div className="mb-4">
       <h1 className="text-3xl text-gray-700 font-bold mb-4">
         Hello, {user.firstName}!
@@ -27,7 +27,8 @@ const Greeting = async () => {
       <Button size="large">Today's Schedule</Button>
     </div>
   </Card>
-  );
+  )
 }
 
-export default Greeting;
+
+export default Greeting
