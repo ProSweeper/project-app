@@ -12,6 +12,7 @@ const getData = async (id) => {
     },
   });
 
+  
   return project;
 };
 
